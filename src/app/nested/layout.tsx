@@ -14,12 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <>
         <nav>This is the nav defined in nested layout.tsx</nav>
         {children}
         <footer>This is the footer defined in nested layout.tsx</footer>
-      </body>
-    </html>
+    </>
   );
 }
